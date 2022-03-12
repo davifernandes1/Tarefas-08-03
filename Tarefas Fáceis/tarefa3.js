@@ -1,0 +1,6 @@
+var Nome1 = ("Pedro")
+var Nome2 = ("João")
+var Sobrenome1 = ("Fernandes")
+var Sobrenome2 = ("Da Silva")
+console.log(Nome1 , Sobrenome1)
+console.log(Nome2 , Sobrenome2)
