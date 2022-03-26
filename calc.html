@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Calculadora</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header {
+background-color:rgb(30, 109, 228);
+padding: 20px;
+}
+header > h2{
+    color:rgb(2, 13, 32);
+    text-align: center;
+
+}
+.container{
+
+border: 2px solid rgb(10, 100, 128);
+border-radius: 15px;
+margin: auto;
+margin-top: 16px;
+padding: 16px;
+width: 70%;
+
+}
+footer {
+    background-color: rgb(30, 109, 228);
+    color:rgb(2, 13, 32);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h2>Calculadora Do Dave!?</h2>
+    </header>
+    <div class="container">
+        <center>
+    <h2>Calculadora</h2>
+    <label>Valor de X:</label>
+    <input type="number" id="x">
+    <br>
+    <br>
+    <label>Valor de Y:</label>
+    <input type="number" id="y">
+    <br>
+    <br>
+    <label>Resultado:</label>
+    <input type="number" id="z" readonly>
+    <br>
+    <br>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="resto()">R</button>
+    <button onclick="potencia()">^</button>
+    <button onclick="raiz()">√</button>
+    <button onclick="apagar()">C</button>
+</center>
+    <div>
+    <script>
+        const somar = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = parseFloat(x)+ parseFloat(y)
+    document.getElementById('z').value = z 
+  
+        }
+        const subtrair = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = parseFloat(x)- parseFloat(y)
+    document.getElementById('z').value = z    
+        }
+        const multiplicar = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = parseFloat(x)* parseFloat(y)
+    document.getElementById('z').value = z     
+            
+        }
+        const dividir = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = parseFloat(x)/ parseFloat(y)
+    document.getElementById('z').value = z    
+        }
+        const resto = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = parseFloat(x)% parseFloat(y)
+    document.getElementById('z').value = z     
+        }
+        const raiz = function () {
+            let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = Math.sqrt(parseFloat(x))
+    document.getElementById('z').value = z  
+}
+const potencia = function () {
+    let x = document.getElementById('x').value
+    let y = document.getElementById('y').value
+    z = Math.pow(parseFloat(x),parseFloat(y))
+    document.getElementById('z').value = z  
+}
+const apagar = function () {
+    document.getElementById ('x').value = ""
+    document.getElementById ('y').value = ""
+    document.getElementById ('z').value = ""
+
+}
+    </script>
+    <footer>
+        <ul>
+        <li>A mais nova Calculadora de Killua Zoldyck!</li>
+        <li>Killua Calculator :)</li>
+        </ul>
+        </footer>
+        </body>
+        <center>
+        <p>
+            <img src="https://pa1.narvii.com/6361/a68b9187b3e9af9f784ea4c79158f4f9b97dead5_hq.gif" alt="Combo" align="middle">
+        </p>
+        </center>
+        </html>
