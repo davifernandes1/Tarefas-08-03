@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Do Futebol Mundial</title>
+<style>
+body {
+    background-color:rgb(255, 255, 255);
+    background: url("https://i.pinimg.com/originals/f5/be/c6/f5bec6764e63313216132c529e6c39b7.png");
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 100%;
+     
+   
+
+}
+header {
+background-color:rgb(230, 170, 59);
+padding: 20px;
+font-size: 30px;
+}
+header > h2{
+    color:rgb(0, 0, 0);
+            font-family: Georgia, "Times New Roman", serif;
+            color: #000000;
+    text-align: center;
+
+}
+.container{
+
+background-color:  rgb(230, 170, 59);
+border: 2px solid black;
+border-radius: 15px;
+margin: auto;
+text-align: center;
+margin-top: 16px;
+padding: 16px;
+width: 60%;
+font-size: 20px;
+
+}
+footer {
+    background-color: rgb(230, 170, 59);
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.outside{
+            width: 30%;
+            height: 100px;
+            background-color: rgb(230, 170, 59);
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 8px;
+            border: 2px solid;
+            position: static;
+            display: table;
+        }
+    .inside {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+.inside > p {
+            font-size: 20px;
+        }
+        .inside > select {
+            font-size: 15px;
+        }
+        .inside > button {
+            background-color: #a30000; 
+            border: 2px solid rgb(0, 0, 0);
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .inside > button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+        }
+        .inside > button:active {
+            box-shadow: none;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+<header>
+    <h2>Quiz Do Futebol Mundial</h2>
+</header>
+<div class="container">
+<h4>   Qual foi o ultimo país a ganhar a copa do mundo?   </h4>
+<p>Selecione uma resposta :
+<select id="r1">
+    <option value="Alternativa">Alternativa</option>
+    <option value="Errado">Alemanha</option>
+    <option value="Certo">França</option>
+    <option value="Errado">Brasil</option>
+    <option value="Errado">Itália</option>
+    <option value="Errado">Portugal</option>
+</select></p>
+<script>
+            const select = document.getElementById("r1");
+        select.addEventListener("change", setr1);
+
+function setr1() {
+    let opcao = select.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+</script>
+</div>
+
+<div class="container">
+    <h4>  Quantas copas do mundo tem o Brasil?   </h4>
+    <p>Selecione uma resposta :
+    <select id="r2">
+        <option value="Alternativa">Alternativa</option>
+        <option value="Errado">2</option>
+        <option value="Errado">1</option>
+        <option value="Errado">6</option>
+        <option value="Certo">5</option>
+        <option value="Errado">Nenhuma</option>
+    </select></p>
+    <script>
+                    const select1 = document.getElementById("r2");
+        select1.addEventListener("change", setr2);
+
+function setr2() {
+    let opcao = select1.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+    </script>
+    </div>
+    <div class="container">
+        <h4>  Qual o foi o jogador com mais bolas de ouro no mudo?  </h4>
+        <p>Selecione uma resposta :
+        <select id="r3">
+            <option value="Alternativa">Alternativa</option>
+            <option value="Certo">Lionel Messi</option>
+            <option value="Errado">Cristiano Ronaldo</option>
+            <option value="Errado">Neymar</option>
+            <option value="Errado">Ronaldo Fenômeno</option>
+            <option value="Errado">Zidane</option>
+            <option value="Errado">Gerson</option>
+        </select></p>
+        <script>
+                const select2 = document.getElementById("r3");
+        select2.addEventListener("change", setr3);
+
+function setr3() {
+    let opcao = select2.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+        </script>
+        </div>
+        <div class="container">
+            <h4>   Qual foi o último campeão do brasileirão?   </h4>
+            <p>Selecione uma resposta :
+            <select id="r4">
+                <option value="Alternativa">Alternativa</option>
+                <option value="Errado">Corinthians</option>
+                <option value="Errado">Grêmio</option>
+                <option value="Certo">Palmeiras</option>
+                <option value="Errado">Vasco</option>
+                <option value="Errado">Flamengo</option>
+            </select></p>
+            <script>
+                                    const select3 = document.getElementById("r4");
+        select3.addEventListener("change", setr4);
+
+function setr4() {
+    let opcao = select3.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+            </script>
+            </div>
+            
+            <div class="container">
+                <h4>   Quem é designado como Rei do Futebol?   </h4>
+                <p>Selecione uma resposta :
+                <select id="r5">
+                    <option value="Alternativa">Alternativa</option>
+                    <option value="Errado">Romario</option>
+                    <option value="Certo">Pele</option>
+                    <option value="Errado">Maradona</option>
+                    <option value="Errado">Ronaldinho Gaúcho</option>
+                </select></p>
+                <script>
+    const select4 = document.getElementById("r5");
+        select4.addEventListener("change", setr5);
+
+function setr5() {
+    let opcao = select4.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+                </script>
+                </div>
+                <div class="container">
+                    <h4>   Qual o maior campeão da Champions League?   </h4>
+                    <p>Selecione uma resposta :
+                    <select id="r6">
+                        <option value="Alternativa">Alternativa</option>
+                        <option value="Errado">Barcelona</option>
+                        <option value="Errado">Liverpool</option>
+                        <option value="Certo">Real Madrid</option>
+                        <option value="Errado">Chelsea</option>
+                        <option value="Errado">PSG</option>
+                    </select></p>
+                    <script>
+   const select5 = document.getElementById("r6");
+        select5.addEventListener("change", setr6);
+
+function setr5() {
+    let opcao = select5.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+                    </script>
+                    </div>
+                    <div class="container">
+                        <h4>   Qual foi o placar do último jogo do Brsil?   </h4>
+                        <p>Selecione uma resposta :
+                        <select id="r7">
+                            <option value="Alternativa">Alternativa</option>
+                            <option value="Errado">2x1</option>
+                            <option value="Errado">0x1</option>
+                            <option value="Certo">4x0</option>
+                            <option value="Errado">0x0</option>
+                        </select></p>
+                        <script>
+                            const select6 = document.getElementById("r7");
+        select6.addEventListener("change", setr7);
+
+function setr7() {
+    let opcao = select6.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+                        </script>
+                        </div>
+                        
+           <div class="container">
+           <h4>   Qual foi a última copa que o Brasil ganhou?   </h4>
+           <p>Selecione uma resposta :
+          <select id="r8">
+            <option value="Alternativa">Alternativa</option>
+           <option value="Errado">2006</option>
+            <option value="Errado">1998</option>
+             <option value="Certo">2002</option>
+          <option value="Errado">2014</option>
+       <option value="Errado">1980</option>
+          </select></p>
+          <script>
+              const select7 = document.getElementById("r8");
+        select7.addEventListener("change", setr8);
+
+function setr8() {
+    let opcao = select7.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+          </script>
+       </div>
+         <div class="container">
+       <h4>Qual é o clube que mais vezes foi campeão do campeoanto brasileiro?      </h4>
+            <p>Selecione uma resposta :
+        <select id="r9">
+            <option value="Alternativa">Alternativa</option>
+            <option value="Certo">Palmeiras</option>
+                 <option value="Errado">São Paulo</option>
+           <option value="Errado">Avai</option>
+          <option value="Errado">Flamengo</option>
+          <option value="Errado">Santos</option>
+             </select></p>
+             <script>
+                  const select8 = document.getElementById("r9");
+        select8.addEventListener("change", setr9);
+
+function setr9() {
+    let opcao = select8.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+             </script>
+          </div>
+              <div class="container">
+               <h4>  Qual é o maior artilheiro de todos os tempos?   </h4>
+              <p>Selecione uma resposta :
+              <select id="r10">
+                <option value="Alternativa">Alternativa</option>
+          <option value="Errado">Pele</option>
+   <option value="Errado">Lionel Messi</option>
+<option value="Errado">Fred</option>
+    <option value="Errado">Neymar</option>
+     <option value="Certo">Cristiano Ronaldo</option>
+    </select></p>
+    <script>
+     const select9 = document.getElementById("r10");
+        select9.addEventListener("change", setr10);
+        var paragrafo = document.querySelector("#pontuação")
+
+function setr10() {
+    let opcao = select9.value
+    console.log(opcao)
+
+
+    if (opcao == "Certo") {
+                alert("Acertou! Você ganhou 1 ponto");
+            } else if (opcao == "Errado") {
+                alert("Errou! Você perdeu 1 ponto");
+            }
+        }
+    </script>
+            </div>
+        </div>
+    <div class="outside">
+    <div class="inside">
+        <h1>Pontuação Final</h1>
+        <button id="fim" onclick="setPontos()">Ver pontuação</button>
+        <h3 id="pontuação"></h3>
+    </div>
+    </div>
+    <center>
+        <p>
+            <img src="https://mrvnoesporte.com.br/wp-content/uploads/2018/05/195150-futebol-no-brasil-conheca-os-maiores-marcos-do-esporte-no-nosso-pais-1.jpg" alt="Combo" align="middle">
+        </p>
+        </center>
+<footer>
+<ul>
+<li>Obrigado por Realizar o meu Quiz!</li>
+<li>Volte Sempre!</li>
+</ul>
+</footer>
+</body>
+</html>
