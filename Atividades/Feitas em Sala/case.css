@@ -1,0 +1,47 @@
+body{
+margin: 0;
+font-family: monospace;
+font-size: 15px;
+
+}
+
+header{
+  color: white;
+  background-color: rgb(243, 203, 26);
+  padding: 24px;
+  text-align: center;
+  font-size: 20px;
+}
+footer{
+  background-color: rgb(243, 203, 26);
+  padding: 38px;
+  color: white;
+  text-align: center;
+}
+
+.container{
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 60%;
+  border: 2px solid rgb(243, 203, 26);
+  border-radius: 24px;
+  padding: 16px;
+  text-align: center;
+  
+}
+.div-produtos{
+  border: 2px solid rgb(243, 203, 26);
+  border-radius: 16px;
+  padding: 16px;
+margin-top: 8px;
+
+}
+
+.div-resultado{
+  border: 2px solid rgb(243, 203, 26);
+  border-radius: 16px;
+  padding: 16px;
+margin-top: 8px;
+
+}
