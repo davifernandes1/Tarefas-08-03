@@ -1,0 +1,101 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ header {
+     background-color: rgb(53, 56, 58);
+     color: white;
+     font-family: monospace;
+padding: 2rem;
+text-align: center;
+
+ }
+
+ footer {
+     background-color:rgb(101, 106, 110) ;
+color: aliceblue;
+padding-top: 3rem;
+padding-bottom: 3rem;
+font-weight: bold;
+ }
+
+ footer li {
+     list-style: none;
+ }
+
+ nav {
+     background-color: rgb(101, 106, 110) ;
+     padding: 2rem;
+     margin-bottom: 4rem;
+ }
+ nav ul {
+     display: flex;
+ }
+
+ nav li{
+     list-style: none;
+     padding: 0.5rem;
+
+ }
+ li a{
+     color:aliceblue;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: large;
+     transition: 0.2s;
+     padding: 1rem;
+     border-radius: 1rem;
+ }
+
+ li a:hover{
+background-color: rgba(255, 255, 255, 0.39);
+ }
+.container {
+    width: 70vw;
+    margin: auto;
+    border: 2px solid rgb(61, 70, 78);
+    padding: 0.5rem ;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.container h2{
+    background-color: rgb(101, 106, 110);
+    color: white;
+    padding: 1rem;
+text-align: center;
+border-radius: 1rem;
+
+}
+
+.container input{
+    width: 92%;
+    margin-bottom: 0.5rem;
+padding: 1rem;
+border-radius: 1rem;
+outline: none;
+border:2px solid rgb(101, 106, 110);
+}
+
+.container input:hover{
+    background-color: rgb(179, 179, 179);
+}
+
+.container button{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 68vw;
+    background-color:rgb(37, 43, 48) ;
+    color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: black;
+}
