@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <header>
+    <h2>Calculadora IMC do Dave</h2>
+  </header>
+    <div class="divAltura">
+      <label for="altura">Altura (m)</label>
+      <input type="number" id="altura" />
+    </div>
+    <div class="divPeso">
+      <label for="peso">Peso (KG)</label>
+      <input type="number" id="peso" />
+    </div>
+
+    <div class="divCalc">
+      <button onclick="calcIMC()">Calcular</button>
+      <div class="divLimp">
+        <button onclick="apagarIMC()">Limpar</button>
+
+    </div>
+  </div>
+    <span id="resultado"></span>
+  </main>
+
+  <script src="script.js"></script>
+  <footer> 
+    <ul>
+      <li>Davi Fernandes Vieira</li>
+      <li>2A</li>
+      <li>Sesi/Senai</li>
+    </ul>
+  </footer>
+</body>
+</html>
