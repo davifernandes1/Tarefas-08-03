@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: rgb(210, 105, 30);
+    color: white;
+    font-size: 15px;
+    margin-top: 55px;
+}
+
+.footer-li{
+    padding: 17px;
+}
+
+header{
+    background-color:rgba(255, 228, 196);
+    color:rgba(255, 139, 95);
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar {
+    font-weight: 600;
+    background-color: rgba(218, 218, 218, 0.158);
+}
+
+.container-calculo, .container-resultados{
+    border-radius: 25px;
+    border: rgba(240, 115, 13, 0.747) solid 2px ;
+    padding: 15px;
+    width: 42vw;
+    margin: auto;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.container-calculo-titulo, .container-resultados-titulo {
+    border-radius: 5px;
+    background-color:rgba(245, 200, 140);
+    color: rgba(255, 68, 0, 0.747);
+    padding: 8px;
+    font-weight: bold;
+    font-size:large;
+}
+
+.container-calculo-caixa1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    border: rgba(240, 115, 13, 0.747) solid 2px;
+    padding: 5px;
+    margin-top: 13px;
+    width: 100%;
+}
+
+.container-calculo-botao{
+    margin-top: 15px;
+    background-color: rgba( 222, 184, 135);
+    color: rgba(255, 68, 0, 0.747);
+    font-weight: bold;
+    border: rgba(240, 115, 13, 0.747) solid 1px;
+    border-radius: 11px;
+    padding: 7px;
+    margin-right: 12px;
+}
+
+.container-calculo-caixa2 {
+    background-color: rgba(245, 200, 140);
+    color: rgba(255, 68, 0, 0.747);
+    text-align: center;
+    border: rgba(240, 115, 13, 0.747) solid 1px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 11px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.container-resultados-caixa{
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    border: rgba(240, 115, 13, 0.747) solid 2px;
+    padding: 5px;
+    margin-top: 13px;
+    width: 100%;
+    padding: 10px;
+    
+}

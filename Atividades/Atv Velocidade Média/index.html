@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <script src="bootstrap-5.2.0/js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.1/css/bootstrap.min.css">
+    <title>Cálculo da Velocidade Média</title>
+</head>
+<body>
+    <header><h2>Velocidade Média</h2>
+
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.todamateria.com.br/velocidade-media/">Sobre </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main class="container">
+    <section class="container-calculo">
+        <p class="container-calculo-titulo">Cálculo</p>
+        <input class="container-calculo-caixa1" type="number" id="deslocamento" placeholder="Informe o valor do deslocamento">
+        <input class="container-calculo-caixa1" type="number" id="tempo" placeholder="Informe o intervalo de tempo">
+        <button class="container-calculo-botao" id="limpar" onclick="Limpando()">Limpar</button>
+        <button class="container-calculo-botao" id="calcular" onclick="Calculando()">Calcular</button>
+        <br>
+        <input class="container-calculo-caixa2" type="text" id="resposta" reandonly>
+</section>
+
+        <section class="container-resultados">
+            <h3 class="container-resultados-titulo">Resultados</h3>
+            <textarea class="container-resultados-caixa" name="" id="lista" cols="30" rows="10"></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-li">
+        <li>SENAI SC</li>
+        <li>Curso de Desenvolvimento de Sistemas</li>
+        <li>Lógica de Programa</li>
+        <li>Davi Fernandes Vieira</li>
+        </div>
+    </footer>
+</body>
+</html>
