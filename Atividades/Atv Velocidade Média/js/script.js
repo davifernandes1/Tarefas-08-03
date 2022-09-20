@@ -7,17 +7,17 @@ let lista = document.getElementById('lista').value
 function Calculando(){
     let a = Number.parseFloat(document.getElementById('deslocamento').value)
     let b = Number.parseFloat(document.getElementById('tempo').value)
-    let res = ( (a / b) + " km/h")
-    document.getElementById('resposta').value = res
-    document.getElementById("lista").innerHTML += res + "                                                                                                   "
-
+    let Resultado = ( (a / b) + " km/h")
+    document.getElementById('resposta').value = Resultado
+    document.getElementById("lista").innerHTML += Resultado + "                                                                                                   "
+    localStorage.setItem('Resultado ', Resultado )
 }
 
 function Limpando(){
     a = (" ")
     b = (" ")
-    res = (" ")
+Resultado  = (" ")
   document.getElementById('deslocamento').value = a
   document.getElementById('tempo').value = b
-  document.getElementById('resposta').value = res
+  document.getElementById('resposta').value = Resultado
 }
