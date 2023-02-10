@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Questão 1 //
+let A, B, C, D, media;
+
+
+        A = 10
+        B = 20
+        C = A * B
+        D = A + B + C
+       
+       
+        media = (A + B + C + D)/4
+       
+        console.log('Questão 1\nA = '+A+ '\nB = '+B+' \nC = '+C+' \nD = '+D+'\nMedia : ' + media);
+
+
+// // Questão 2
+
+let salario = 3000, reajuste, novoSalario
+
+if (salario <= 2000) {
+    reajuste = salario * 0.15
+    indiceReajustado = '15'
+}
+else if (salario <= 4000) {
+    reajuste = salario * 0.12
+    indiceReajustado ='12'
+}   
+else {
+reajuste = salario * 0.10
+indiceReajustado = '10'
+}
+novoSalario = salario + reajuste
+console.log('Questão 2 \nNovo Salário : R$' +novoSalario+ '\nValor Reajustado : R$' +reajuste+' \nÍndice Reajustado :'+indiceReajustado+'%')
+
+
+//Questão 3
+
+let vbase = 50, minicursos = 'S', traducao = 'S'
+
+if (minicursos === "S") 
+    vbase += 20;
+if (traducao === "S") 
+    vbase += 10;
+   
+
+console.log('Questão 3\nValor da Inscrição: R$'+vbase)
+
+
+// //Questão 4
+
+
+let Qtdmulheres = 0 ;
+let Qtd10filmes = 0 ;
+for (let i = 0; i < 50; i++) {
+    let sexo = Math.floor(Math.random() * 2);
+    let filmesAssistidos = Math.floor(Math.random() * 22);
+ 
+    if (sexo === 1) {
+      Qtdmulheres++;
+    }
+    if (filmesAssistidos > 10) {
+      Qtd10filmes++;
+    }
+  }
+ 
+  let percentualMulheres = (Qtdmulheres / 50) * 100;
+ 
+  console.log(`Quantidade de mulheres entrevistadas: ${Qtdmulheres}`);
+  console.log(`Quantidade de pessoas que assistiram mais que 10 filmes: ${Qtd10filmes}`);
+  console.log(`Percentual de mulheres entrevistadas: ${percentualMulheres}%`);
+
+
+//Questão 5
+  let nota1 = [7.0, 7.0, 5.5, 6.0, 6.0, 7.0, 9.0, 6.8, 6.5, 6.0];
+let nota2 = [7.5, 8.0, 6.0, 6.0, 6.5, 6.0, 8.0, 7.2, 7.5, 8.0];
+
+
+let medias = [];
+let conceitoA = 0;
+let somaMedias = 0;
+
+
+for (let i = 0; i < nota1.length; i++) {
+  let media = (nota1[i] + nota2[i]) / 2;
+  medias.push(media);
+
+
+  if (media >= 9) {
+    conceitoA++;
+  }
+
+
+  somaMedias += media;
+}
+
+
+let mediaGeral = somaMedias / medias.length;
+
+
+console.log("Quantidade de alunos com conceito A: " + conceitoA);
+console.log("Média geral da turma: " + mediaGeral.toFixed(2));
+
+
+
+
+
+    </script>
+</body>
+</html>
