@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <a href="login.html" class="logo"><span>Blue's</span></a>
+  
+      <ul class="navbar">
+        <li><a href="login.html" class="active">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="principais.html">Principas Investimentos</a></li>
+        <li><a href="passos.html">Dicas e Passos</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+
+      </ul>
+    </header>
+    <div class="sobre-pagina">
+        <div class="container2">
+        <h1>Calculadora</h1>
+        <h3>Juros Compostos</h3>
+        <div id="input_box">
+            <div class="input-field">
+                <div class="calculo">
+                    
+                <label for="valorinicial">Valor Inicial:</label>
+                <input type="number" id="valorinicial">
+            </div>
+
+            <div class="input-field">
+                <div class="calculo">
+
+                <label for="txjuros">Taxa de Juros:</label>
+                <input type="number" id="txjuros">
+            </div>
+
+            <div class="input-field">
+                <div class="calculo">
+
+                <label for="temporend">Tempo de Rendimento:</label>
+                <input type="number" id="temporend">
+            </div>
+        </div>
+
+        <div id="result">
+            <div class="calculo">
+
+
+            <label id="resultado">Resultado:</label>
+            
+            <span id="total">
+                
+                R$ 0,00
+            </span>
+            
+        </div>
+        
+        <div class="calculo">
+            
+        <button id="calculate">
+            
+            Calcular
+        </button>
+        
+        <input type="button" value="Limpar" onclick="limpar()" id="button1">
+    </div>
+</div>
+</main>
+
+<script type="text/javascript" src="script1.js"></script>
+       
+        </div>
+    </body>
+</html>
