@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Questão 1
+        let jogos = {
+            nome: 'Valorant',
+            lançamento: 2020,
+            jogou: true
+
+        }
+        console.log(jogos)
+
+        //Questão 2
+
+        let pessoa = {
+            nome: 'Davi',
+            
+            imprimirNome: function(){
+                console.log('Nome: ' + this.nome)
+            },
+            soma: function(a,b){
+
+                let c = a + b
+                return c
+            }
+        }
+        pessoa.imprimirNome()
+        pessoa.soma(5,5)
+
+        //Questão 3
+
+        let pessoa1 = {
+            nome: 'Davi',
+            idade: 15
+        }
+console.log(pessoa1)
+
+        let pessoa2 = {
+            nome: 'Neymar',
+            idade: 31
+        }
+        console.log(pessoa2)
+
+        if(pessoa1.idade > pessoa2.idade)
+        console.log('A pessoa mais velha é o ' + pessoa2.nome)
+        else if (pessoa1.idade < pessoa2.idade)
+        console.log('A pessoa mais velha é o ' + pessoa2.nome)
+        else 
+            console.log ('As idades são iguais: ')
+
+
+        //Questão 4
+
+        let func1 = {
+            nome: 'Tiringa',
+            salario: 25000
+        }
+        console.log(func1)
+
+        let func2 = {
+            nome: 'Alanzoka',
+            salario: 15000
+        }
+        console.log(func2)
+
+        let salarioMedio = (func1.salario + func2.salario)/2 
+        console.log('Média salarial: R$' + salarioMedio)
+
+        //Questão 5
+
+        let retangulo = {
+            largura: 3.0,
+            altura: 4.0,
+
+
+            area: function(){
+                let a = this.largura*this.altura
+                console.log('Área: '+a)
+
+            },
+            perimetro: function(){
+                let p = 2* (this.largura*this.altura)
+                console.log('Perimetro: '+p)
+
+            },
+            diagonal: function(){
+                let d = Math.sqrt(this.largura*this.largura + this.altura*this.altura)
+                console.log('Diagonal: '+d)
+                
+            }
+        }
+        retangulo.area()
+        retangulo.perimetro()
+        retangulo.diagonal()
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
