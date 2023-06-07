@@ -1,5 +1,0 @@
-let aluno1 = "Alissa Michels"
-let aluno2 = "Davi Fernandes"
-let aluno3 = "Federico Calloni"
-let aluno4 = "Matheus Santana"
-let aluno5 = "Matheus Trevisan"
