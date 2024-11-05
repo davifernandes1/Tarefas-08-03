@@ -1,0 +1,3 @@
+# instalar bibliotecas deste projeto 
+
+pip  install -r requirements.txt
